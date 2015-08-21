@@ -7,4 +7,7 @@ jq.onload = procede;
 function procede()
 {
   $( "#notMe" ).css( "border", "3px solid red" );
+  $( "#notMe" ).click( function(){
+    var n = noty({text: 'noty - a jquery notification library!'});
+  })
 }
