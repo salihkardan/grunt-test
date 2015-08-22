@@ -1,5 +1,5 @@
 var jq = document.createElement('script');
-jq.src = "../components/jquery/dist/jquery.js";
+jq.src = "js/lib.min.js";
 document.querySelector('head').appendChild(jq);
 
 jq.onload = procede;

@@ -47,16 +47,15 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'<%= config.dist %>/js/lib.min.js': [
-						'<%= bower.directory %>/jquery/jquery.js',
+					'<%= config.app %>/js/lib.min.js': [
+						'<%= bower.directory %>/jquery/dist/jquery.js',
 						'<%= bower.directory %>/underscore/underscore.js',
-						'<%= bower.directory %>/requirejs/require.js',
+						// '<%= bower.directory %>/requirejs/require.js',
+            '<%= bower.directory %>/noty/js/noty/packaged/jquery.noty.packaged.js',
 					]
 				}
 			}
 		}
-
-
 		// bower_concat: {
 		//   all: {
 		//     dest: 'js/bower.js',
