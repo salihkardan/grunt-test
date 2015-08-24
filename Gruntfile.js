@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 					'<%= config.app %>/js/lib.min.js': [
 						'<%= bower.directory %>/jquery/dist/jquery.js',
 						'<%= bower.directory %>/underscore/underscore.js',
-						// '<%= bower.directory %>/requirejs/require.js',
+						// '<%= bower.directory %>/angular/angular.js',
             '<%= bower.directory %>/noty/js/noty/packaged/jquery.noty.packaged.js',
 					]
 				}
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
     },
 	});
 	require('load-grunt-tasks')(grunt);
-  grunt.registerTask('default', ['connect', 'watch']);
+  grunt.registerTask('default', ['copy', 'uglify', 'connect', 'watch']);
 	grunt.registerTask('buildbower', [
 	  'bower_concat',
 	  'uglify:bower'
