@@ -1,4 +1,4 @@
-s{
+{
   "name": "grunt-test",
   "dependencies": {
     "angular": "~1.4.4",
