@@ -4,7 +4,7 @@ angular.module('myApp', ['ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'views/build/main.html',
         controller: 'MainCtrl'
       })
       .otherwise({
