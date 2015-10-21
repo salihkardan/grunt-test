@@ -7,4 +7,14 @@ angular.module('myApp')
 		'AngularJS',
 		'Karma',
 	];
+})
+
+.controller('TestCtrl', function ($scope) {
+	$scope.awesomeThings1 = [
+		'HTML5 Boilerplate1',
+		'AngularJS1',
+		'Karma1',
+	];
 });
+
+

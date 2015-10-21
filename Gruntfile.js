@@ -33,7 +33,8 @@ module.exports = function(grunt) {
 					pretty: true,
 				},
 				files: {
-					'<%= config.app %>/views/build/main.html': '<%= config.app %>/views/jade/main.jade'
+					'<%= config.app %>/views/build/main.html': '<%= config.app %>/views/jade/main.jade',
+					'<%= config.app %>/views/build/test.html': '<%= config.app %>/views/jade/test.jade'
 				}
 			}
 		},
