@@ -11,6 +11,24 @@
   button.btn.btn-default(class='btn-primary') Left
   button.btn.btn-primary(type='button') Primary
 
+
+  .container
+  h2 Modal Example
+  // Trigger the modal with a button
+  button.btn.btn-info.btn-lg(type='button', data-toggle='modal', data-target='#myModal') Open Modal
+  // Modal
+  #myModal.modal.fade(role='dialog')
+    .modal-dialog
+      // Modal content
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal') ×
+          h4.modal-title Modal Header
+        .modal-body
+          p Some text in the modal.
+        .modal-footer
+          button.btn.btn-default(type='button', data-dismiss='modal') Close
+
   //- input#notMe(value='5')
   //- script(type='text/javascript', src='js/jq.js')
   //- script(type='text/javascript', src='components/bootstrap/dist/js/bootstrap.js')
